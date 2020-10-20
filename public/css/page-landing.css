@@ -1,0 +1,68 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
+
+:root {
+  --primary-color: #F1CE8A;
+  --font-color: #211F23;
+  --brown: #584B43;
+  --orange: #BF8F5E;
+  font-size: 62.5%; 
+}
+
+.page-landing{
+  margin: 8vh auto;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+}
+
+#logo{
+  height: 60%;
+  width: 60%;
+  animation-delay: 80ms;
+}
+
+.container{
+  margin: auto;
+  width: 85%;
+}
+
+.location{
+  animation-delay: 160ms;
+}
+
+main h1{
+  animation-delay: 240ms;
+}
+
+.location, h1, .visit p{
+  height: 16vh;
+}
+
+.visit p{
+  animation-delay: 320ms;
+}
+
+.visit a{
+  height: 7.5rem;
+  width: 7.5rem;
+  background: white;
+  border: none;
+  border-radius: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 3px 3px 12px 6px rgba(0, 0, 0, 0.4);
+  animation-delay: 400ms;
+}
+
+.visit a:hover{
+  background: var(--primary-color);
+  transition: 120ms;
+  box-shadow: none;
+}
+
+.visit a img{
+  height: 6.5rem;
+  width: 6.5rem;
+}
