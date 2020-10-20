@@ -26,6 +26,10 @@
   width: 85%;
 }
 
+#titulo{
+  font-size: 4rem;
+}
+
 .location{
   animation-delay: 160ms;
 }
@@ -58,7 +62,7 @@ main h1{
 
 .visit a:hover{
   background: var(--primary-color);
-  transition: 120ms;
+  transition: 60ms;
   box-shadow: none;
 }
 

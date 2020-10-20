@@ -1,7 +1,15 @@
+:root {
+  --primary-color: #F1CE8A;
+  --font-color: #211F23;
+  --brown: #584B43;
+  --orange: #BF8F5E;
+  font-size: 62.5%; 
+}
+
 @keyframes up{
   from{
     opacity: 0;
-    transform: translateX(36px);
+    transform: translateX(54px);
   }
 
   to{
@@ -15,4 +23,14 @@
   animation-duration: 450ms;
   animation-delay: 50ms;
   animation-fill-mode: backwards;
+}
+
+#titulo::after {
+  color: var(--font-color);
+  opacity: 1;
+}
+
+#titulo::before {
+  color: var(--font-color);
+  opacity: 1;
 }
