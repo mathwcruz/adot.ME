@@ -8,8 +8,8 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 
 // Criando um ícone
 const icon = L.icon({
-  iconURL: "/public/images/logo.svg",
-  iconSize: [58, 68],
+  iconUrl: "../images/logo.svg",
+  iconSize: [70, 70],
   iconAnchor: [29, 68],
   popupAnchor: [170, 20]
 })
@@ -18,9 +18,9 @@ const icon = L.icon({
 const popup = L.popup({
   closeButton: false,
   className: 'map-popup',
-  minWidth: 240,
-  minHeigth: 240
-}).setContent('Adote Bicho <a href="adoption-location.html?=1" class="choose-adoption"> <img src="./public/images/right-arrow.svg"> </a>')
+  minWidth: 200,
+  minHeigth: 200
+}).setContent('Adote Bicho <a href="adoption-location.html?=1" class="choose-adoption"> <img src="../images/rigth-arrow.svg"> </a>')
 
 // POP-UP
 L.marker([-25.4430978,-49.2854497], {icon}).addTo(map).bindPopup(popup)

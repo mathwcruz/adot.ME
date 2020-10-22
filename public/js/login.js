@@ -1,3 +1,4 @@
+// Efeito nos input's de login
 const inputs = document.querySelectorAll('.input')
 
 function focusFunc() {
@@ -16,11 +17,3 @@ inputs.forEach(input => {
   input.addEventListener('focus', focusFunc)
   input.addEventListener('blur', blurFunc)
 })
-
-const redirect = document.querySelector('#logar')
-
-function Redirect() {
-  redirect.addEventListener("click", function() {
-    location.href = "page-landing.html"
-  })
-}
