@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME">
-  <link rel="stylesheet" href="/public/css/reset.css">
-  <link rel="stylesheet" href="/public/css/login.css">
-  <title>Adot.ME - Login</title>
-</head>
-<body>
-  <div class="container">
-    <div class="img">
-      <img src="/public/images/background-login.svg" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME" />
+    <link rel="stylesheet" href="/public/css/reset.css" />
+    <link rel="stylesheet" href="/public/css/login.css" />
+    <title>Adot.ME - Login</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="img">
+        <img src="/public/images/background-login.svg" alt="" />
+      </div>
+      <div class="login-container">
+        <form action="login.html">
+          <img
+            class="avatar"
+            src="/public/images/logo.svg"
+            alt="Logo do Adot.ME"
+          />
+          <h2>Seja bem-vindo</h2>
+          <div class="input-div one">
+            <div class="i">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <h5>Usuário</h5>
+              <input type="text" class="input" />
+            </div>
+          </div>
+          <div class="input-div two">
+            <div class="i">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div>
+              <h5>Senha</h5>
+              <input type="password" class="input" />
+            </div>
+          </div>
+          <a href="#">Esqueceu a senha?</a>
+          <a href="/public/views/page-landing.html" class="btn">Login</a>
+        </form>
+      </div>
     </div>
-    <div class="login-container">
-      <form action="login.html">
-        <img class="avatar"src="/public/images/logo.svg" alt="Logo do Adot.ME">
-        <h2>Seja bem-vindo</h2>
-        <div class="input-div one">
-          <div class="i">
-            <i class="fas fa-user"></i>
-          </div>
-          <div>
-            <h5>Usuário</h5>
-            <input type="text" class="input">
-          </div>
-        </div>
-        <div class="input-div two">
-          <div class="i">
-            <i class="fas fa-lock"></i>
-          </div>
-          <div>
-            <h5>Senha</h5>
-            <input type="password" class="input">
-          </div>
-        </div>
-        <a href="#">Esqueceu a senha?</a>
-        <!--<input id="logar" type="submit" class="btn" value="login">-->
-        <a href="/public/views/page-landing.html" class="btn">Login</a>
-      </form>
-    </div>
-  </div>
-  <script src="/public/js/login.js"></script>
-</body>
+    <script src="/public/js/login.js"></script>
+  </body>
 </html>

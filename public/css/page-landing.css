@@ -1,126 +1,263 @@
 @import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
 
 :root {
-  --primary-color: #F1CE8A;
-  --font-color: #211F23;
-  --brown: #584B43;
-  --orange: #BF8F5E;
-  font-size: 62.5%; 
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
+  font-size: 62.5%;
 }
 
-.page-landing{
-  margin: 8vh auto;
+.page-landing {
+  margin: 4vh auto;
   min-height: 100vh;
   text-align: center;
   display: flex;
 }
 
-#logo{
-  height: 45vh;
-  width: 45vh;
+#logo {
+  height: 30vh;
+  width: 30vw;
   animation-delay: 80ms;
 }
 
-.container{
+.container {
   margin: auto;
   width: min(95%, 118rem);
 }
 
-#titulo{
-  animation-delay: 80ms;
+#titulo {
+  animation-delay: 160ms;
   font-size: 5rem;
   font-weight: 800;
   margin-top: 2rem;
 }
 
-.location{
-  animation-delay: 160ms;
+.location {
+  animation-delay: 240ms;
 }
 
-.location h1{
-  font-size: 9.0rem;
+.location h1 {
+  font-size: 9rem;
   font-weight: 900;
 }
 
-main h1{
-  animation-delay: 240ms;
+main h1 {
+  animation-delay: 320ms;
   font-weight: 600;
 }
 
-.location, h1, .visit p{
+.location,
+h1,
+.visit p {
   height: 16vh;
   font-size: 2.5rem;
 }
 
-.visit p{
-  animation-delay: 320ms;
-  font-weight: 400;
-  font-size: 2.2rem;
+.visit p {
+  animation-delay: 400ms;
+  font: 400 2.5rem/1.2 "Nunito", sans-serif;
 }
 
-.visit a{
+.visit p strong {
+  font: 800 3.2rem "Nunito", sans-serif;
+  color: var(--brown);
+}
+
+.curitiba-location {
+  width: 3.2vh;
+}
+
+#arrow-btn {
   height: 7.5rem;
   width: 7.5rem;
+  display: flex;
   background: white;
   border: none;
-  border-radius: 1.8rem;
-  display: flex;
+  border-radius: 2.2rem;
   align-items: center;
   justify-content: center;
-  margin: auto;
-  box-shadow: 3px 3px 12px 6px rgba(0, 0, 0, 0.4);
-  animation-delay: 400ms;
+  margin: 0 auto 0 auto;
+  box-shadow: 6px 3px 20px 3px rgba(0, 0, 0, 0.4);
+  animation-delay: 480ms;
 }
 
-.visit a:hover{
+#arrow-btn:hover {
   background: var(--primary-color);
   transition: 150ms;
   box-shadow: none;
+  transform: rotate(-6deg) scale(1.25);
 }
 
-.visit a img{
+.visit a img {
   height: 6.5rem;
   width: 6.5rem;
 }
 
+/* MENU HAMBURGUER */
+/* VER O MOTIVO DE SER POSSIVEL IR PARA OUTRAS PAGINAS ATRAVÉS DO MENU HAMBURUGER, MAS QUANDO ELE NAO ESTÁ APARECENDO */
+
+.menu {
+  background: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  top: 30px;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.menu:hover {
+  background: white;
+  transition: 250ms;
+}
+
+.hamburguer {
+  position: relative;
+  display: block;
+  background: var(--font-color);
+  width: 30px;
+  height: 2px;
+  top: 29px;
+  left: 15px;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+  background: var(--font-color);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: 0.5s ease-in-out;
+}
+
+.hamburguer:before {
+  top: -10px;
+}
+
+.hamburguer:after {
+  bottom: -10px;
+}
+
+input {
+  display: none;
+}
+
+input:checked ~ label .hamburguer {
+  transform: rotate(45deg);
+}
+
+input:checked ~ label .hamburguer:before {
+  transform: rotate(90deg);
+  top: 0;
+}
+
+input:checked ~ label .hamburguer:after {
+  transform: rotate(90deg);
+  bottom: 0;
+}
+
+.menu {
+  cursor: pointer;
+  box-shadow: 0 0 0 0 white, 0 0 0 0 white;
+  transition: box-shadow 1.1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.menu:hover {
+  box-shadow: 0 0 0 8px var(--orange), 0 0 0 8px var(--font-color);
+}
+
+input:checked ~ label .menu {
+  box-shadow: 0 0 0 130vw var(--primary-color), 0 0 0 130vh var(--primary-color);
+}
+
+input:checked ~ ul {
+  opacity: 1;
+}
+
+ul {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  list-style: none;
+  font-size: 5vh;
+  opacity: 0;
+  transition: 0.25s 0.1s cubic-bezier(0, 1.07, 0, 1.02);
+  z-index: 2;
+}
+
+a {
+  color: var(--font-color);
+  display: block;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  font: 800 5vh "Nunito", sans-serif;
+}
+
+a:hover {
+  color: white;
+  transition: 300ms;
+}
+
 /* LAYOUT PARA DESKTOP */
 
-@media (min-width: 800px) {
-
-  header{
+@media (min-width: 720px) {
+  header {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 
-  .location, h1, .visit p{
+  .location,
+  h1,
+  .visit p {
     height: initial;
   }
 
-  .location p{
+  .location p {
     font-size: 2.6rem;
     line-height: 1.4;
   }
 
-  #logo{
-    height: 40vh;
-    width: 40vh;
+  #logo {
+    height: 35vh;
+    width: 35vw;
   }
 
-  #titulo{
+  #titulo {
     margin: 15vh 3vh 0;
     font-size: 10vh;
   }
 
-  main h1, .visit, .visit a{
+  main h1,
+  .visit,
+  .visit a {
     margin: 8vh auto;
   }
 
-  main h1{
-    font-size: clamp(3rem, 6vw, 7rem); /* cmalp() o primeiro parâmetro é o mínimo, o segundo é o ideal e o terceiro é o valor máximo */
+  main h1 {
+    font-size: clamp(
+      3rem,
+      6vw,
+      7rem
+    ); /* cmalp() o primeiro parâmetro é o mínimo, o segundo é o ideal e o terceiro é o valor máximo */
   }
 
-  .visit p{
+  .visit p {
     font-size: 3rem;
+  }
+
+  #arrow-btn {
+    margin-top: 6vh;
+  }
+
+  .menu {
+    top: initial;
   }
 }

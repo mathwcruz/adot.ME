@@ -9,7 +9,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // Criando um ícone
 const icon = L.icon({
   iconUrl: "../images/logo.svg",
-  iconSize: [70, 70],
+  iconSize: [80, 80],
   iconAnchor: [29, 68],
   popupAnchor: [170, 20]
 })

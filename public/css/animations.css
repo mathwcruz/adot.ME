@@ -1,42 +1,42 @@
 :root {
-  --primary-color: #F1CE8A;
-  --font-color: #211F23;
-  --brown: #584B43;
-  --orange: #BF8F5E;
-  font-size: 62.5%; 
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
+  font-size: 62.5%;
 }
 
-@keyframes up{
-  from{
+@keyframes up {
+  from {
     opacity: 0;
     transform: translateX(54px);
   }
 
-  to{
+  to {
     opacity: 1;
     transform: translateX(0px);
   }
 }
 
-@keyframes right{
-  from{
+@keyframes right {
+  from {
     opacity: 0;
     transform: translateX(-100%);
   }
-  to{ 
+  to {
     opacity: 1;
     transform: translateX(0);
   }
 }
 
-.animate-up{
+.animate-up {
   animation-name: up;
   animation-duration: 500ms;
   animation-delay: 50ms;
   animation-fill-mode: backwards;
 }
 
-.animate-rigth{
+.animate-rigth {
   animation-name: right;
   animation-delay: 50ms;
   animation-duration: 700ms;

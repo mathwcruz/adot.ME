@@ -1,21 +1,21 @@
 @import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
 
 :root {
-  --primary-color: #F1CE8A;
-  --font-color: #211F23;
-  --brown: #584B43;
-  --orange: #BF8F5E;
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
   font-size: 62.5%;
 }
 
-body{
-  font: 600 2.2rem/1.2 'Nunito', sans-serif;
+body {
+  font: 600 2.2rem/1.2 "Nunito", sans-serif;
   background-color: var(--primary-color);
   width: 100%;
   height: 100%;
 }
 
-.container{
+.container {
   width: 100vw;
   height: 100vh;
   display: grid;
@@ -23,27 +23,27 @@ body{
   grid-gap: 7rem;
 }
 
-.img{
+.img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.img img{
+.img img {
   width: 700px;
 }
 
-.login-container{
+.login-container {
   display: flex;
   align-items: center;
   text-align: center;
 }
 
-form{
+form {
   width: 360px;
 }
 
-form h2{
+form h2 {
   font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
@@ -51,11 +51,11 @@ form h2{
   color: var(--font-color);
 }
 
-.avatar{
+.avatar {
   width: 180px;
 }
 
-.input-div{
+.input-div {
   position: relative;
   display: grid;
   grid-template-columns: 2% 98%;
@@ -64,8 +64,9 @@ form h2{
   border-bottom: 1.8px solid white;
 }
 
-.input-div:after, .input-div:before{
-  content: '';
+.input-div:after,
+.input-div:before {
+  content: "";
   position: absolute;
   bottom: -2px;
   width: 0;
@@ -74,37 +75,38 @@ form h2{
   transition: 350ms;
 }
 
-.input-div:after{
+.input-div:after {
   right: 50%;
 }
 
-.input-div:before{
+.input-div:before {
   left: 50%;
 }
 
-.input-div.focus div h5{
+.input-div.focus div h5 {
   top: -5px;
   font-size: 1.6rem;
 }
 
-.input-div.focus:after, .input-div.focus:before{
+.input-div.focus:after,
+.input-div.focus:before {
   width: 50%;
 }
 
-.input-div.one{
+.input-div.one {
   margin-top: 0;
 }
 
-.input-div.two{
+.input-div.two {
   margin-bottom: 4px;
 }
 
-.input-div > div{
+.input-div > div {
   position: relative;
   height: 45px;
 }
 
-.input-div > div h5{
+.input-div > div h5 {
   position: absolute;
   left: 8px;
   top: 50%;
@@ -115,7 +117,7 @@ form h2{
   transform: 350ms;
 }
 
-.input{
+.input {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -127,11 +129,11 @@ form h2{
   padding: 0.4rem 0.8rem;
   font-size: 1.8rem;
   font-weight: 600;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   color: var(--font-color);
 }
 
-a{
+a {
   display: block;
   text-align: right;
   text-decoration: none;
@@ -142,69 +144,82 @@ a{
   margin-top: 1vh;
 }
 
-a:hover{
+a:hover {
   color: white;
   transition: 200ms;
 }
 
-.btn{
+.btn {
   padding: 15px;
   border-radius: 30px;
   background: var(--font-color);
   color: white;
-  font: 600 1.8rem/1 'Nunito', sans-serif;
+  font: 600 1.8rem/1 "Nunito", sans-serif;
   text-transform: uppercase;
   text-align: center;
 }
 
-.btn:hover{
+.btn:hover {
   background-color: white;
   transition: 250ms;
   color: var(--font-color);
 }
 
-@media screen and (max-width: 1150px) {
-  .container{
-    grid-gap: 5rem;
+@media screen and (min-width: 900px) and (max-width: 1500px) {
+  .img img {
+    margin-left: 5vw;
+  }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1200px) {
+  .img img {
+    width: 500px;
   }
 
+  form {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    grid-gap: 5rem;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-  form{
+  form {
     width: 290px;
   }
 
-  form h2{
+  form h2 {
     font-size: 2.4rem;
     margin: 8px 0;
   }
 
-  .img img{
+  .img img {
     width: 450px;
   }
 
-  .avatar{
+  .avatar {
     width: 150px;
   }
-
 }
 
 @media screen and (max-width: 900px) {
-  .img{
+  .img {
     display: none;
   }
 
-  .avatar{
+  .avatar {
     width: 200px;
   }
 
-  .container{
+  .container {
     grid-template-columns: 1fr;
   }
 
-  .login-container{
+  .login-container {
     justify-content: center;
   }
-  
 }

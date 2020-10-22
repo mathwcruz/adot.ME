@@ -45,12 +45,13 @@ aside p{
 }
 
 footer p{
-  font: 600 2.4rem 'Nunito', sans-serif;
+  font: 800 2.4rem 'Nunito', sans-serif;
   margin-top: 10px;
 }
 
 #city{
   margin-top: 0px;
+  font-weight: 600;
 }
 
 #mapid{
