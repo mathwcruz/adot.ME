@@ -1,0 +1,78 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
+
+:root {
+  --primary-color: #F1CE8A;
+  --font-color: #211F23;
+  --brown: #584B43;
+  --orange: #BF8F5E;
+  font-size: 62.5%;
+}
+
+#page-adoption{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  color: white;
+}
+
+header img{
+  width: 150px;
+  margin: 0 0 15px 10px;
+}
+
+aside{
+  width: clamp(24rem, 28vw, 44rem);
+  background: var(--brown);
+  padding: clamp(3rem, 5vw, 8rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 2px 0px 12px 6px rgba(0, 0, 0, 0.55);
+}
+
+aside h2{
+  margin-top: 6.4rem;
+  font: 800 clamp(2.8rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
+}
+
+aside strong{
+  margin-top: 2.4rem;
+  font: 600 2.2rem/1.3 'Nunito', sans-serif;
+}
+
+aside p{
+  font: 600 2.2rem/1.3 'Nunito', sans-serif;
+}
+
+#dogs-p{
+  margin-top: 3.4rem;
+  font: 400 clamp(2.2rem, 1.6vw, 3rem)/1.3 'Nunito', sans-serif;
+}
+
+footer p{
+  font: 600 2.8rem 'Nunito', sans-serif;
+}
+
+#mapid{
+  height: 100%;
+  width: 100%;
+}
+
+a.create-adoption-location{
+  position: absolute;
+  right: 3rem;
+  bottom: 3rem;
+  width: 6.5rem;
+  height: 6.5rem;
+  background: var(--brown);
+  border: 0;
+  border-radius: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a.create-adoption-location:hover{
+  background: var(--font-color);
+  transition: 220ms;
+}

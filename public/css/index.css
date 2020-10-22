@@ -8,6 +8,10 @@
   font-size: 62.5%; /* estabelecendo o tamanho da fonte de todo o html, como 62.5%, equivalente a 10px, para ficar mais facil de calcular os demais tamanhos de fontes com "rem" nos elementos abaixo*/
 }
 
+*{
+  box-sizing: border-box;
+}
+
 body, input, textarea, button{
   height: 100vh;
   font: 400 2.2rem/1.05 'Nunito', sans-serif;

@@ -74,7 +74,7 @@ main h1{
 
 .visit a:hover{
   background: var(--primary-color);
-  transition: 60ms;
+  transition: 150ms;
   box-shadow: none;
 }
 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adot.ME - Locais de adoção</title>
+    <!-- Importando o css da biblioteca leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+    <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/adoption.css">
+    <link rel="stylesheet" href="/public/css/animations.css">
+  </head>
+  <body>
+    <div id="page-adoption">
+      <aside class= "animate-rigth">
+        <header>
+          <img src="/public/images/logo.svg" alt="Logo do Adot.me">
+          <h2>Escolha um ponto de adoção</h2>
+          <p id = "dogs-p">Cãozinhos esperam por você</p>
+        </header>
+        <footer>
+          <strong>Curitiba</strong>
+          <p>Paraná</p>
+        </footer>
+      </aside>
+      <div id="mapid">
+        <a href="/public/views/create-adoption-location.html" class="create-adoption-location" title="Cadastre um ponto de adoção"><img src="/public/images/plus.svg" alt="Criar um ponto de adoção">
+        </a>
+      </div>
+    </div>
+    <!-- Importando o script da biblioteca leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+    <script src="/public/js/adoption.js"></script>
+  </body>
+</html>
