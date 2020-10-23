@@ -1,0 +1,33 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
+
+:root {
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
+  font-size: 62.5%;
+}
+
+.list-pages {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+li{
+    margin-top: 5vh;
+    font: 800 clamp(2.5rem, 5vw, 3.5rem) 'Nunito', sans-serif;
+}
+
+li a{
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+li a:hover{
+    color: white;
+    transition: 250ms;
+}

@@ -1,62 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt_BR">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Adot.ME - Home</title>
-    <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME" />
-    <link rel="stylesheet" href="/public/css/reset.css" />
-    <link rel="stylesheet" href="/public/css/index.css" />
-    <link rel="stylesheet" href="/public/css/page-landing.css" />
-    <link rel="stylesheet" href="/public/css/animations.css" />
-  </head>
-  <body>
-    <div class="page-landing">
-      <div class="container">
-        <header>
-          <img
-            class="animate-up"
-            id="logo"
-            src="/public/images/logo.svg"
-            alt="Logo Adot.ME"
-          />
-          <div class="location animate-up">
-            <h1 id="titulo">Adot.ME</h1>
-          </div>
-        </header>
-        <main>
-          <h1 class="animate-up">
-            <strong>Traga alegria àqueles que precisam de um lar</strong>
-          </h1>
-          <section class="visit">
-            <p class="animate-up">
-              Acompanhe locais de adoção disponíveis em
-              <strong> Curitiba</strong>
-              <img class = "curitiba-location" src="/public/images/location.svg" alt="Ícone de mapa">
-            </p>
-            <a id="arrow-btn" class="button-map animate-up" href="adoption.html"
-              ><img src="/public/images/rigth-arrow.svg" alt="Ir ao mapa"
-            /></a>
-            <!-- VER O MOTIVO DE SER POSSIVEL IR PARA OUTRAS PAGINAS ATRAVÉS DO MENU HAMBURUGER, MAS QUANDO ELE NAO ESTÁ APARECENDO -->
-            <input id="menu-hamburguer" type="checkbox" />
-            <label for="menu-hamburguer">
-              <div class="menu">
-                <span class="hamburguer"></span>
-              </div>
-            </label>
-            <ul>
-              <li><a href="/public/views/page-landing.html">Home</a></li>
-              <li>
-                <a href="/public/views/adoption.html">Locais de adoção</a>
-              </li>
-              <li><a href="#">Cadastrar local</a></li>
-              <li><a href="#">Fotos</a></li>
-              <li><a href="/public/views/login.html">Sair</a></li>
-            </ul>
-          </section>
-        </main>
-        <script src="/public/js/efeitoMaquinaDeEscrever.js"></script>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adot.ME - Home</title>
+  <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME" />
+  <link rel="stylesheet" href="/public/css/reset.css" />
+  <link rel="stylesheet" href="/public/css/index.css" />
+  <link rel="stylesheet" href="/public/css/page-landing.css" />
+  <link rel="stylesheet" href="/public/css/animations.css" />
+</head>
+
+<body>
+  <div class="page-landing">
+    <div class="container">
+      <header>
+        <img class="animate-up" id="logo" src="/public/images/logo.svg" alt="Logo Adot.ME" />
+        <div class="location animate-up">
+          <h1 id="titulo">Adot.ME</h1>
+        </div>
+      </header>
+      <main>
+        <h1 class="animate-up">
+          <strong>Traga alegria àqueles que precisam de um lar</strong>
+        </h1>
+        <section class="visit">
+          <p class="animate-up">
+            Acompanhe locais de adoção disponíveis em
+            <strong> Curitiba</strong>
+            <img class="curitiba-location" src="/public/images/location.svg" alt="Ícone de mapa">
+          </p>
+          <a id="arrow-btn" class="button-map animate-up" href="adoption.html"><img src="/public/images/rigth-arrow.svg"
+              alt="Ir ao mapa" /></a>
+          <a href="/public/views/hamburguer-menu.html" class="hamburguer-button"><img
+              src="/public/images/hamburger-menu.png" alt=""></a>
+        </section>
+      </main>
+      <script src="/public/js/efeitoMaquinaDeEscrever.js"></script>
     </div>
-  </body>
+  </div>
+</body>
 </html>
