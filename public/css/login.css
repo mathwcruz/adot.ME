@@ -31,12 +31,15 @@ body {
 
 .img img {
   width: 700px;
+  margin-left: 5vw;
+  cursor: pointer;
 }
 
 .login-container {
   display: flex;
   align-items: center;
   text-align: center;
+  margin-left: 7vw;
 }
 
 form {
@@ -141,7 +144,7 @@ a {
   font-size: 1.8rem;
   font-weight: 600;
   transition: 350ms;
-  margin-top: 1vh;
+  margin-top: 1.5vh;
 }
 
 a:hover {
@@ -169,11 +172,18 @@ a:hover {
   .img img {
     margin-left: 5vw;
   }
+  .login-container {
+    margin-left: initial;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1200px) {
   .img img {
     width: 500px;
+  }
+
+  .login-container {
+    margin-left: initial;
   }
 
   form {
@@ -184,6 +194,10 @@ a:hover {
 @media screen and (max-width: 1150px) {
   .container {
     grid-gap: 5rem;
+  }
+
+  .login-container {
+    margin-left: initial;
   }
 }
 
@@ -199,6 +213,10 @@ a:hover {
 
   .img img {
     width: 450px;
+  }
+
+  .login-container {
+    margin-left: initial;
   }
 
   .avatar {
@@ -221,5 +239,6 @@ a:hover {
 
   .login-container {
     justify-content: center;
+    margin-left: initial;
   }
 }
