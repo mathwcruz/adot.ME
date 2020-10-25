@@ -1,0 +1,234 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
+
+:root {
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
+  font-size: 62.5%;
+}
+
+#create-adoption-place{
+  display: flex;
+  min-height: 100vh;
+}
+
+main{
+  margin: 0 auto;
+}
+
+form{
+  width: 70rem;
+  margin: 4rem auto;
+  border: 1.5px dotted var(--font-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  padding: 5rem;
+  background: white
+}
+
+fieldset{
+  border: none;
+}
+
+fieldset legend{
+  width: 100%;
+  font: 800 3rem "Nunito", sans-serif;
+  color: var(--font-color);
+}
+
+fieldset + fieldset{ /* pegando o segundo fieldset */
+  margin-top: 4rem;
+}
+
+fieldset hr{
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  background: var(--orange);
+  margin: 1.2rem 0;
+}
+
+.input-block + .input-block{ /* pegando o segundo input block */
+  margin-top: 2rem;
+}
+
+.input-block label{
+  color: var(--brown);
+  font: 600 1.8rem "Nunito", sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+.input-block input,
+.input-block textarea {
+  width: 100%;
+  background: #f5f8fa;
+  border-radius: 15px;
+  border: 1.5px dotted var(--font-color);
+  margin-top: 0.8rem;
+  color: var(--font-color);
+  outline: none;
+  font: 600 1.8rem "Nunito", sans-serif;
+}
+
+.input-block input:focus,
+.input-block textarea:focus,
+.input-block button:focus{
+  border: 1.8px solid var(--orange);
+}
+
+.input-block input{
+  height: 6rem;
+  padding: 0 1.5rem;
+}
+
+.input-block input:valid, /* quando o input estiver preenchido, irá receber uma nova estiliação */
+.input-block textarea:valid{
+  border: 1.5px solid var(--brown);
+}
+
+.input-block textarea{
+  height: clamp(10rem, 15rem, 22rem);
+  resize: vertical; /* resize é o ponto que está na lateral inferior esquerda que faz com que seja possível ajustar o tamanho do textareapelo browser, nesse caso, só estou permitindo que seja possível ajustar ele na vertical */
+  padding: 1.5rem;
+}
+
+.input-block button{
+  border: 1.5px dashed var(--font-color);
+  border-radius: 15px;
+  width: 100%;
+  height: 6rem;
+  margin-top: 2.4rem;
+  padding: 0 1.5rem;
+  background: #f5f8fa;
+  cursor: pointer;
+  outline: none;
+}
+
+.input-block button:hover{
+  border: 1.8px dashed var(--orange);
+}
+
+.input-block button img{
+  height: 2.5rem;
+}
+
+.new-images{
+  position: relative;
+}
+
+.new-images + .new-images{
+  margin-top: 1.2rem;
+}
+
+.new-images span{
+  position: absolute;
+  right: 20px;
+  bottom: 13px;
+  cursor: pointer;
+}
+
+#add-image{
+  background: var(--orange);
+}
+
+#add-image:hover{
+  background: var(--primary-color);
+  transition: 250ms;
+  border: 1.5px dashed var(--font-color);
+}
+
+.button-select .active{
+  background: var(--orange);
+  color: white;
+  font-weight: 800;
+  border: 1.8px solid var(--font-color);
+}
+
+#confirm-button{
+  background: var(--orange);
+  color: white;
+  font-weight: 800;
+  font-size: 1.8rem;
+  border: 1.8px solid var(--font-color);
+  text-transform: uppercase;
+}
+
+#confirm-button:hover{
+  background-color: var(--primary-color);
+  color: var(--font-color);
+  transition: 250ms;
+}
+
+.map-container {
+  margin: 2rem 0 4rem 0;
+  background-color: var(--orange);
+  border: 1px solid var(--font-color);
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+#mapid {
+  width: 100%;
+  height: 25rem;
+}
+
+.map-container footer {
+  padding: 1rem 0;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+}
+
+.map-container footer a {
+  text-decoration: none;
+  color: white;
+  font: 600 2.2rem/1.3 "Nunito", sans-serif;
+}
+
+.map-container footer a:hover {
+  transition: 350ms;
+  color: var(--brown);
+}
+
+.map-container .leaflet-container {
+  border-radius: 1.5rem;
+}
+
+#logo img{
+  position: absolute;
+  margin: 2rem 0 0 2rem;
+  height: 25vh;
+  animation-delay: 160ms;
+}
+
+#back-button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#back-button:hover {
+  transition: 200ms;
+  transform: translateX(-6px);
+}
+
+#back-button img {
+  width: 110%;
+  height: 110%;
+}
+
+@media screen and (max-width: 1150px) {
+  #logo{
+    display: none;
+  }
+}

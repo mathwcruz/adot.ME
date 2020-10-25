@@ -6,6 +6,7 @@
   font-size: 62.5%;
 }
 
+/* efeito que faz vir da direita em direção à esquerda */
 @keyframes up {
   from {
     opacity: 0;
@@ -18,6 +19,14 @@
   }
 }
 
+.animate-up {
+  animation-name: up;
+  animation-duration: 500ms;
+  animation-delay: 50ms;
+  animation-fill-mode: backwards;
+}
+
+/* efeito que faz surgir da esquerda em direção a direita */
 @keyframes right {
   from {
     opacity: 0;
@@ -29,19 +38,29 @@
   }
 }
 
-.animate-up {
-  animation-name: up;
-  animation-duration: 500ms;
-  animation-delay: 50ms;
-  animation-fill-mode: backwards;
-}
-
 .animate-rigth {
   animation-name: right;
   animation-delay: 50ms;
   animation-duration: 700ms;
 }
 
+/* efeito para surgir */
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-appear {
+  animation-name: appear;
+  animation-duration: 400ms;
+  animation-fill-mode: backwards;
+}
+
+/* efeito máquina de escrever */
 #titulo::after {
   color: var(--font-color);
   opacity: 1;

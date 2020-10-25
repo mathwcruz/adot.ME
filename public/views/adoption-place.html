@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adot.ME - Adote Bicho</title>
+
+    <!-- Importando o css da biblioteca leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/adoption-place.css">
+    <link rel="stylesheet" href="/public/css/animations.css">
+    <link rel="stylesheet" href="/public/css/loading.css">
+
+  </head>
+
+  <body>
+
+    <div id="page-adoption-place">
+
+      <div id="logo">
+        <img class="animate-appear" src="/public/images/logo.svg" alt="Logo do Adot.ME">
+      </div>
+
+      <button 
+        id="back-button" 
+        class="animate-rigth" 
+        onclick="history.back()">
+        <img class="back-map" src="/public/images/left-arrow.svg" alt="Voltar ao mapa">
+      </button>
+
+      <main class="animate-appear">
+
+        <div class="adoption-details">
+
+          <img src="/public/images/four-dogs.jpg" alt="4 cachorros">
+          <div class="adoption-details-content">
+
+            <h1>Adote Bixo</h1>
+            <p>Resgata cães encontrados na rua e acolhe aqueles que são entregues por cidadãos</p>
+            <div class="map-container">
+
+              <div id="mapid">
+              </div>
+
+              <footer>
+                <a href="">Localização no Google Maps</a>
+              </footer>
+
+            </div>
+
+            <hr>
+            <h2>Informações</h2>
+
+            <div class="open-details">
+
+              <div class="hour">
+                <img src="/public/images/clock.svg" alt="Horário de atendimento">
+                <h3>Aberto das 08:30h às 19:00h</h3>
+              </div>
+
+              <div class="attendance">
+                <img src="/public/images/info.svg" alt="Dias de atendimento">
+                <h3>Atendimento de segunda a sexta</h3>
+              </div>
+
+            </div>
+
+            <button type="button" class="primary-button">
+              <img src="/public/images/whatsapp.svg" alt="Contato do WhatsApp">
+            </button>
+
+          </div>
+
+        </div>
+
+      </main>
+
+    </div>
+
+    <!-- Importando o script da biblioteca leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <script src="/public/js/adoption-place.js"></script>
+    
+    <script src="/public/js/loading.js"></script>
+
+  </body>
+  
+</html>

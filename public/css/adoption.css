@@ -1,26 +1,30 @@
 @import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
 
 :root {
-  --primary-color: #F1CE8A;
-  --font-color: #211F23;
-  --brown: #584B43;
-  --orange: #BF8F5E;
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
   font-size: 62.5%;
 }
 
-#page-adoption{
+body {
+  background-color: white;
+}
+
+#page-adoption {
   width: 100%;
   height: 100%;
   display: flex;
   color: white;
 }
 
-header img{
+header img {
   width: 150px;
   margin: 0 0 15px 10px;
 }
 
-aside{
+aside {
   width: clamp(24rem, 28vw, 44rem);
   background: var(--brown);
   padding: clamp(3rem, 5vw, 8rem);
@@ -30,37 +34,39 @@ aside{
   box-shadow: 2px 0px 12px 6px rgba(0, 0, 0, 0.55);
 }
 
-aside h2{
+aside h2 {
   margin-top: 4rem;
-  font: 800 clamp(2.8rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
+  font: 800 clamp(2.8rem, 5vw, 3.6rem) / 1.1 "Nunito", sans-serif;
 }
 
-aside p{
-  font: 600 2.2rem/1.3 'Nunito', sans-serif;
+aside p {
+  font: 600 2.2rem/1.3 "Nunito", sans-serif;
 }
 
-#dogs-p{
+#dogs-p {
   margin-top: 3.4rem;
-  font: 400 clamp(2.2rem, 1.6vw, 3rem)/1.3 'Nunito', sans-serif;
+  font: 400 clamp(2.2rem, 1.6vw, 3rem) / 1.3 "Nunito", sans-serif;
 }
 
-footer p{
-  font: 800 2.4rem 'Nunito', sans-serif;
+footer p {
+  font: 800 2.4rem "Nunito", sans-serif;
   margin-top: 10px;
 }
 
-#city{
+#city {
   margin-top: 0px;
   font-weight: 600;
 }
 
-#mapid{
+#mapid {
   height: 100%;
   width: 100%;
+  animation-delay: 150ms;
 }
 
-a.create-adoption-location{
+a.create-adoption-location {
   position: absolute;
+  z-index: 600; /* lidando com camadas, profundidade, colocando ele para frente */
   right: 3rem;
   bottom: 3rem;
   width: 6.5rem;
@@ -73,22 +79,44 @@ a.create-adoption-location{
   align-items: center;
 }
 
-a.create-adoption-location:hover{
+a.create-adoption-location:hover {
   background: var(--font-color);
   transition: 220ms;
 }
 
-.leaflet-popup-content{
+.leaflet-popup-content-wrapper {
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 15px;
+  margin-left: 1.5vw;
+}
+
+.leaflet-popup-content {
+  color: var(--brown);
   text-align: center;
+  font: 800 2.2rem "Nunito", sans-serif;
+  margin: 0.8rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.choose-adoption img{
-  width: 12%;
-  height: 12%;
-  margin-left: 10px;
+.leaflet-popup-content a {
+  width: 3.8rem;
+  height: 3.8rem;
+  background: var(--primary-color);
+  box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
 }
 
-.map-popup{
-  font: 800 1.6rem/1 'Nunito', sans-serif;
-  color: var(--font-color);
+.leaflet-popup-content a:hover {
+  transition: 150ms;
+  transform: translateX(6px);
+}
+
+.leaflet-popup-tip {
+  display: none;
+}
+
+.leaflet-container {
+  z-index: 5;
 }

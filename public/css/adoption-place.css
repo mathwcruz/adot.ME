@@ -1,0 +1,219 @@
+@import "https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap";
+
+:root {
+  --primary-color: #f1ce8a;
+  --font-color: #211f23;
+  --brown: #584b43;
+  --orange: #bf8f5e;
+  font-size: 62.5%;
+}
+
+#page-adoption-place {
+  display: flex;
+  min-height: 100vh;
+}
+
+main {
+  margin: 0 auto;
+}
+
+.logo {
+  width: 135%;
+  margin-top: 10px;
+}
+
+.adoption-details {
+  width: 70rem;
+  margin: 4rem auto;
+  border: 1.5px dotted var(--font-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.adoption-details > img {
+  /* a primeira imagem da div */
+  width: 100%;
+  height: 30rem;
+  object-fit: cover; /* mantendo as proporções adequadas da imagem com "cover", para ela não ficar esticada */
+  opacity: 0.85;
+  cursor: pointer;
+  box-shadow: 0px 4px 10px 2px rgba(0, 0, 0, 0.4);
+}
+
+.adoption-details > img:hover {
+  opacity: 1;
+  transition: 200ms;
+}
+
+.adoption-details-content {
+  padding: 5rem;
+  background: white;
+}
+
+.adoption-details-content h1 {
+  color: var(--font-color);
+  font: 800 4.5rem/1.3 "Nunito", sans-serif;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.adoption-details-content p {
+  color: var(--font-color);
+  margin-top: 1.6rem;
+  font: 600 2.2rem/1.2 "Nunito", sans-serif;
+  text-align: center;
+}
+
+.map-container {
+  margin-top: 4rem;
+  background-color: var(--orange);
+  border: 1px solid var(--font-color);
+  border-radius: 1.5rem;
+  box-shadow: 6px 6px 10px 2px rgba(0, 0, 0, 0.6);
+}
+
+#mapid {
+  width: 100%;
+  height: 25rem;
+}
+
+.map-container footer {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.map-container footer a {
+  text-decoration: none;
+  color: white;
+  font: 600 2.2rem/1.3 "Nunito", sans-serif;
+}
+
+.map-container footer a:hover {
+  transition: 350ms;
+  color: var(--brown);
+}
+
+.map-container .leaflet-container {
+  border-radius: 1.5rem;
+}
+
+.adoption-details-content hr {
+  width: 100%;
+  height: 1.5px;
+  border: none;
+  background: var(--orange);
+  margin: 4rem 0;
+}
+
+.adoption-details-content h2 {
+  font: 800 3rem "Nunito", sans-serif;
+  color: var(--font-color);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.open-details {
+  margin-top: 2.2rem;
+  display: grid;
+  grid-template-columns: repeat(
+    2,
+    1fr
+  ); /* terá duas colunas com cada uma ocupando 50% do espaço */
+  column-gap: 2rem;
+}
+
+.open-details div {
+  padding: 3rem 2.2rem;
+  background-color: var(--orange);
+  color: white;
+  border: 1px dotted var(--font-color);
+  border-radius: 15px;
+  margin-bottom: 3rem;
+}
+
+.open-details img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.open-details div h3 {
+  font: 800 1.8rem "Nunito", sans-serif;
+}
+
+.open-details .hour,
+.open-details .attendance {
+  box-shadow: 3px 3px 5px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hour img {
+  width: 20%;
+}
+
+.attendance img {
+  width: 20%;
+}
+
+.primary-button {
+  margin-top: 5rem;
+  width: 50%;
+  height: 6rem;
+  border: none;
+  background: #3cdc8c;
+  cursor: pointer;
+  border-radius: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.primary-button:hover {
+  transition: 200ms;
+  background: #36cf82;
+  transform: translateY(3px);
+}
+
+.primary-button img {
+  width: 10%;
+}
+
+#logo img{
+  position: absolute;
+  margin: 2rem 0 0 2rem;
+  height: 25vh;
+  animation-delay: 160ms;
+}
+
+#back-button {
+  width: 48px;
+  height: 48px;
+  border: none;
+  background: white;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 3rem;
+  bottom: 3rem;
+  z-index: 200;
+  box-shadow: 2px 2px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#back-button:hover {
+  transition: 200ms;
+  transform: translateX(-6px);
+}
+
+#back-button img {
+  width: 110%;
+  height: 110%;
+}
+
+@media screen and (max-width: 1150px) {
+  #logo{
+    display: none;
+  }
+}

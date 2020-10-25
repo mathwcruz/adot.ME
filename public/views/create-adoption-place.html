@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+  <head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adot.ME - Cadastrar local de adoção</title>
+
+    <!-- Importando o css da biblioteca leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+
+    <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME">
+    <link rel="stylesheet" href="/public/css/reset.css">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" href="/public/css/create-adoption-place.css">
+    <link rel="stylesheet" href="/public/css/animations.css">
+    <link rel="stylesheet" href="/public/css/loading.css">
+
+  </head>
+
+  <body>
+
+    <div id="create-adoption-place">
+
+      <div id="logo">
+        <img class="animate-appear" src="/public/images/logo.svg" alt="Logo do Adot.ME">
+      </div>
+
+      <button 
+        id="back-button" 
+        class="animate-rigth" 
+        onclick="history.back()">
+        <img 
+          class="back-map" 
+          src="/public/images/left-arrow.svg" 
+          alt="Voltar ao mapa">
+      </button>
+
+      <main class="animate-top">
+
+        <form action="">
+
+          <fieldset>
+            <legend>Dados informativos</legend>
+            <hr>
+            <div class="map-container">
+
+              <div id="mapid">
+                <input 
+                  type="hidden" 
+                  name="lat"> <!-- input da latitude -->
+                <input 
+                  type="hidden" 
+                  name="lng"> <!-- input da longitude -->
+              </div>
+
+              <footer>
+                <a id="select-point" href="">Clique no mapa para adicionar a sua localização</a>
+              </footer>
+
+            </div>
+
+            <div class="input-block">
+              <label for="name">Nome</label>
+              <input 
+                id="name" 
+                type="text" 
+                placeholder="Nome da empresa" 
+                name="name" 
+                required>
+            </div>
+
+            <div class="input-block">
+              <label for="about">Sobre</label>
+              <textarea 
+                id="about" 
+                cols="30" 
+                rows="10" 
+                placeholder="Conte um pouco sobre a sua empresa..." 
+                name="about" 
+                required></textarea>
+            </div>
+
+            <div class="input-block">
+              <label for="whatsapp">Nº do Whats</label>
+              <input 
+                id="whatsapp" 
+                type="text" 
+                placeholder="(XX) 9XXXX-XXXX" 
+                name="whatsapp" 
+                required>
+            </div>
+
+            <div class="input-block">
+              <label for="images">Fotos dos cãezinhos</label>
+              <div id="images" class="images-upload">
+
+                <div class="new-images">
+                  <input 
+                    placeholder="Cole o link da sua foto" 
+                    name="images" 
+                    required>
+                  <span 
+                    onclick="deletarCampo(event)">
+                    <img src="/public/images/red-x.svg" alt="Excluir imagem">
+                  </span>
+                </div>
+
+              </div>
+
+              <button 
+                onclick="adicionarCampoDeFotos()" 
+                id="add-image" 
+                type="button">
+                <img src="/public/images/plus-black.svg" alt="Adicionar fotos">
+              </button>
+
+            </div>
+
+          </fieldset>
+
+          <fieldset>
+            <legend>Atendimento</legend>
+            <hr>
+            <div class="input-block">
+              <label for="hour-attendance">Horário de atendimento</label>
+              <input 
+                id="hour-attendance" 
+                type="text" 
+                placeholder="Exemplo: 07:30h às 19:30h" 
+                name="hour-attendance" 
+                required>
+            </div>
+
+            <div class="input-block">
+              <label for="open_on_weekends">Atendem em finais de semana?</label>
+              <input 
+                id="open_on_weekends"
+                type="hidden" value="1" 
+                name="open_on_weekends" 
+                required>
+
+              <div class="button-select">
+                <button 
+                  onclick="atendeFinalDeSemana(event)" 
+                  data-value="1" 
+                  type="button" 
+                  class="active">Sim
+                </button>
+                <button 
+                  onclick="atendeFinalDeSemana(event)" 
+                  data-value="0" 
+                  type="button">Não
+                </button>
+              </div>
+
+              <button 
+                id="confirm-button" 
+                type="submit">Confirmar cadastro
+              </button>
+            </div>
+
+          </fieldset>
+
+        </form>
+
+      </main>
+
+    </div>
+
+    <!-- Importando o script da biblioteca leaflet -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <script src="/public/js/create-adoption-place.js"></script>
+
+    <script src="/public/js/loading.js"></script>
+
+  </body>
+
+</html>
