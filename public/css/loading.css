@@ -26,7 +26,7 @@
   right: 0px;
   width: 100px;
   height: 100%;
-  box-shadow: 0 0 10px #eb7a55, 0 0 5px #eb7a55;
+  box-shadow: 0 0 10px #584b43, 0 0 5px #584b43;
   opacity: 1.0;
   -webkit-transform: rotate(3deg) translate(0px, -4px);
   -moz-transform: rotate(3deg) translate(0px, -4px);
@@ -39,13 +39,13 @@
   display: block;
   position: fixed;
   z-index: 2000;
-  top: 15px;
-  right: 15px;
-  width: 14px;
-  height: 14px;
+  top: 25px;
+  right: 25px;
+  width: 25px;
+  height: 25px;
   border: solid 2px transparent;
-  border-top-color: #eb7a55;
-  border-left-color: #eb7a55;
+  border-top-color: #211f23;
+  border-left-color: #211f23;
   border-radius: 10px;
   -webkit-animation: pace-spinner 400ms linear infinite;
   -moz-animation: pace-spinner 400ms linear infinite;

@@ -178,13 +178,6 @@ main {
   width: 10%;
 }
 
-#logo img{
-  position: absolute;
-  margin: 2rem 0 0 2rem;
-  height: 25vh;
-  animation-delay: 160ms;
-}
-
 #back-button {
   width: 48px;
   height: 48px;

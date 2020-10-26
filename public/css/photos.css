@@ -8,6 +8,10 @@
   font-size: 62.5%;
 }
 
+body{
+  background:var(--font-color);
+}
+
 img{
   max-width: 100%;
   display: block;
@@ -16,7 +20,7 @@ img{
 
 .slide{
   max-width: 500px;
-  margin: 2rem auto;
+  margin: 2.5rem auto;
   display: grid;
 }
 
@@ -62,9 +66,9 @@ img{
 .slide-thumb > span{
   flex: 1;
   display: block;
-  height: 3px;
+  height: 3.5px;
   background: rgba(0, 0, 0, 0.5);
-  margin: 10px;
+  margin: 10px 3px;
   border-radius: 4px;
   overflow: hidden;
 }

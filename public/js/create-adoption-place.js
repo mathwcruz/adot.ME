@@ -33,7 +33,7 @@ map.on('click', (event) => {
 })
 
 // Upload de imagens
-function adicionarCampoDeFotos() {
+function adicionarCampoDeFotos(event) {
   const campoDeFotos = document.querySelector('#images') // pegando o container que contém as fotos
 
   const campoParaDuplicacao = document.querySelectorAll('.new-images') // pegando o campo que irá duplicar as imagens

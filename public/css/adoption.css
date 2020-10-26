@@ -48,6 +48,26 @@ aside p {
   font: 400 clamp(2.2rem, 1.6vw, 3rem) / 1.3 "Nunito", sans-serif;
 }
 
+.back-button{
+  width: 8rem;
+  height: 8rem;
+  margin: 15px 0px 15px 3px;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  padding: 3px 5px 0 0;
+}
+
+.back-button:hover{
+  transition: 250ms;
+  transform: translateX(-10px);
+}
+
+.back-button img{
+  height: 70%;
+}
+
 footer p {
   font: 800 2.4rem "Nunito", sans-serif;
   margin-top: 10px;
@@ -103,7 +123,7 @@ a.create-adoption-location:hover {
 .leaflet-popup-content a {
   width: 3.8rem;
   height: 3.8rem;
-  background: var(--primary-color);
+  background: var(--orange);
   box-shadow: 2px 0px 2px 2px rgba(0, 0, 0, 0.4);
   border-radius: 10px;
 }
@@ -111,6 +131,12 @@ a.create-adoption-location:hover {
 .leaflet-popup-content a:hover {
   transition: 150ms;
   transform: translateX(6px);
+}
+
+.leaflet-popup-content a img{
+  margin-top: 5px;
+  width: 80%;
+  height: 80%;
 }
 
 .leaflet-popup-tip {

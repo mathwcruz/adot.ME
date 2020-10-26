@@ -8,6 +8,7 @@
     <title>Adot.ME - Login</title>
 
     <link rel="icon" href="/public/images/logo.svg" alt="Logo Adot.ME"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/public/css/reset.css"/>
     <link rel="stylesheet" href="/public/css/login.css"/>
     <link rel="stylesheet" href="/public/css/loading.css">
@@ -42,7 +43,8 @@
               <h5>Usuário</h5>
               <input 
                 type="text" 
-                class="input"/>
+                class="input"
+                id="usuario"/>
             </div>
 
           </div>
@@ -57,13 +59,27 @@
               <h5>Senha</h5>
               <input 
                 type="password" 
-                class="input"/>
+                class="input"
+                id="senha"/>
             </div>
 
           </div>
 
           <a href="#">Esqueceu a senha?</a>
-          <a href="/public/views/page-landing.html" class="btn">Login</a>
+          <a href="/public/views/page-landing.html" class="btn" onclick="return verificarSeEhVazio()">Login</a>
+
+          <div class="modal-overlay">
+            <div class="modal">
+                <div class="modal-content">
+                    <div class="details-error">
+                      <img src="/public/images/logo.svg" alt="Logo do Adot.ME">
+                      <h1>Preencha todos os campos!</h1>
+                      <p>Você tentou logar sem preencher algum campo, por favor, tente novamente.</p>
+                      <button class="try-again-button" onclick=" history.back()">Tentar novamente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         </form>
 
