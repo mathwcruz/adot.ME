@@ -36,7 +36,7 @@ aside {
 
 aside h2 {
   margin-top: 4rem;
-  font: 800 clamp(2.8rem, 5vw, 3.6rem) / 1.1 "Nunito", sans-serif;
+  font: 800 clamp(2rem, 5vw, 3.6rem) / 1.1 "Nunito", sans-serif;
 }
 
 aside p {
@@ -48,29 +48,9 @@ aside p {
   font: 400 clamp(2.2rem, 1.6vw, 3rem) / 1.3 "Nunito", sans-serif;
 }
 
-.back-button{
-  width: 8rem;
-  height: 8rem;
-  margin: 15px 0px 15px 3px;
-  background-color: white;
-  border: none;
-  cursor: pointer;
-  border-radius: 15px;
-  padding: 3px 5px 0 0;
-}
-
-.back-button:hover{
-  transition: 250ms;
-  transform: translateX(-10px);
-}
-
-.back-button img{
-  height: 70%;
-}
-
 footer p {
   font: 800 2.4rem "Nunito", sans-serif;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 
 #city {
@@ -145,4 +125,23 @@ a.create-adoption-location:hover {
 
 .leaflet-container {
   z-index: 5;
+}
+
+@media screen and (max-width: 1000px) {
+  header img{
+    width: 115px;
+  }
+
+  aside h2{
+    font-size: 2.6rem;
+  }
+
+  #dogs-p{
+    font-size: 2rem;
+  }
+
+  footer p{
+    font-size: 2.2rem;
+  }
+
 }

@@ -199,8 +199,6 @@ a:hover {
   a.hamburguer-button img{
     width: 5.5rem;
     height: 5.5rem;
-    top: initial;
-    bottom: 2rem;
   }
 }
 
@@ -208,5 +206,6 @@ a:hover {
   #logo{
     width: 45vw;
     height: 45vh;
+    top: 6rem;
   }
 }

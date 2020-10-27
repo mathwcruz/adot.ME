@@ -56,7 +56,7 @@ fieldset hr{
 .input-block label{
   color: var(--brown);
   font: 600 1.8rem "Nunito", sans-serif;
-  margin-bottom: 0.8rem;
+  margin-bottom: 5.8rem;
 }
 
 .input-block input,
@@ -111,6 +111,11 @@ fieldset hr{
 
 .input-block button img{
   height: 2.5rem;
+}
+
+#select-file:hover{
+  background: var(--primary-color);
+  color: var(--font-color);
 }
 
 .new-images{

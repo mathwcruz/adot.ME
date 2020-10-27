@@ -61,6 +61,8 @@
                 type="password" 
                 class="input"
                 id="senha"/>
+              <img onclick="ocultarSenha()" class="hide-password" src="/public/images/view.svg" alt="Ocultar senha">
+
             </div>
 
           </div>
@@ -75,7 +77,7 @@
                       <img src="/public/images/logo.svg" alt="Logo do Adot.ME">
                       <h1>Preencha todos os campos!</h1>
                       <p>Você tentou logar sem preencher algum campo, por favor, tente novamente.</p>
-                      <button class="try-again-button" onclick=" history.back()">Tentar novamente</button>
+                      <button class="try-again-button" onclick="fecharModal()">Tentar novamente</button>
                     </div>
                 </div>
             </div>
