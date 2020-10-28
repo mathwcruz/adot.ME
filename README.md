@@ -10,7 +10,7 @@
 
 # <p> <h2  align="center"> Aplicação front end 📟 👨‍💻 </h2> </p>
 
-## <p> <h2 align="center">Adot.ME é uma aplicação que liga pessoas que querem adotar um cãozinho com locais responsáveis por recepcioná-los 🐶</h2> </p>
+## <p> <h2 align="center">Adot.ME é uma projeto que vincula pessoas que querem adotar um cãozinho com locais na sua região que são responsáveis por recepcioná-los 🐶</h2> </p>
 
 # Aplicação Web 💻 
 
