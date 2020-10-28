@@ -59,7 +59,7 @@ function deletarCampo(event) {
     return
   }
   
-  deletarImagem.parentNode.remove() // removendo a imagem ao clica no "x"
+  deletarImagem.parentNode.remove() // removendo a imagem ao clicar no "x"
 }
 
 // Atendimento no final de semana [S/N]
