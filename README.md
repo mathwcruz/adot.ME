@@ -15,7 +15,7 @@
 # **Aplicação Web** 💻
 
 <p align="center">
-  <img src="https://github.com/mathwcruz/Adot.ME/blob/main/Demonstracao.gif" width="1000px"/>
+  <img src="https://github.com/mathwcruz/Adot.ME/blob/main/Demonstracao.gif" width="1400px"/>
 </p>
 
 ## 🚀 Tecnologias utilizadas
