@@ -26,7 +26,7 @@ Essa aplicação foi desenvolvida com as seguintes tecnologias:
 - **CSS3**
 - **JavaScript**
 - **Leaflet** (a javacript library) - https://leafletjs.com/
-- **PACE** (a javascript loading plugin) - https://github.hubspot.com/pace/docs/welcome/
+- **PACE** (a javascript loading plugin) - https://github.com/CodeByZach/pace
 
  ## **<p align="center">Iniciando a caminhada para poder participar da maratona nesse mundo da programação 🏃‍</p>**
 
