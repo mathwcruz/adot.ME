@@ -8,7 +8,7 @@
 
 <br>
 
-#  <p> <h2  align="center"> Aplicação front end 📟 👨‍💻 </h2> </p>
+## **<p> <h2  align="center"> Aplicação front end 📟 👨‍💻 </h2> </p>**
 
 ## <p> <h2 align="center">Adot.ME é uma projeto que vincula pessoas que querem adotar um cãozinho com locais na sua região que são responsáveis por recepcioná-los 🐶</h2> </p>
 
@@ -18,9 +18,7 @@
   <img src="https://github.com/mathwcruz/Adot.ME/blob/main/Demonstracao.gif" width="1400px"/>
 </p>
 
-## 🚀 Tecnologias utilizadas
-
-### Essa aplicação foi desenvolvida com as seguintes tecnologias:
+## 🚀 Tecnologias utilizadas:
 
 <p align="center">
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" alt="html5"  width="70" height="70"/>
