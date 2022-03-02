@@ -8,17 +8,17 @@
 
 <br>
 
-## **<p> <h2  align="center"> Aplicação front end 📟 👨‍💻 </h2> </p>**
+## **<p> <h2  align="center">Front end application 📟 👨‍💻 </h2> </p>**
 
-## <p> <h2 align="center">Adot.ME é uma projeto que vincula pessoas que querem adotar um cãozinho com locais na sua região que são responsáveis por recepcioná-los 🐶</h2> </p>
+## <p> <h2 align="center">Adot.ME is a project that links people who want to adopt a puppy with locals in their region who are responsible for welcoming them. 🐶</h2></p>
 
-# **Aplicação Web** 💻
+# **Web Layout** 💻
 
 <p align="center">
   <img src="https://github.com/mathwcruz/Adot.ME/blob/main/Demonstracao.gif" width="1400px"/>
 </p>
 
-## 🚀 Tecnologias utilizadas:
+## 🚀 Technologies used:
 
 <p align="center">
 <img src="https://github.com/devicons/devicon/blob/master/icons/html5/html5-plain-wordmark.svg" alt="html5"  width="70" height="70"/>
@@ -29,6 +29,6 @@
 - **Leaflet** (a javacript library) - https://leafletjs.com/ ✔️
 - **PACE** (a javascript loading plugin) - https://github.com/CodeByZach/pace ✔️
 
- ## **<p align="center">Iniciando a caminhada para poder participar da maratona nesse mundo da programação 🏃‍</p>**
+ ## **<p align="center">Starting the walk to be able to participate in the marathon in this programming world 🏃‍</p>**
 
- ### <p> <h2 align="center"> Mais uma aplicação realizada por Matheus da Cruz 👨‍💻 </h2> </p>
+ ### <p> <h2 align="center">Another application made by Matheus da Cruz 👨‍💻 </h2> </p>
