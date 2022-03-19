@@ -18,6 +18,13 @@
   <img src="https://github.com/mathwcruz/Adot.ME/blob/main/Demonstracao.gif" width="1400px"/>
 </p>
 
+<br />
+
+## :star: Features
+- [x] Registration of adoption points
+- [x] Listing of adoption points on the map
+- [x] Listing information for a specific point of adoption
+
 ## 🚀 Technologies used:
 
 <p align="center">
