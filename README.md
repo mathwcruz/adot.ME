@@ -8,9 +8,9 @@
 
 <br>
 
-## **<p> <h2  align="center">Front end application 📟 👨‍💻 </h2> </p>**
+<h2 align="center">Front end application 📟 👨‍💻 </h2>
 
-## <p> <h2 align="center">Adot.ME is a project that links people who want to adopt a puppy with locals in their region who are responsible for welcoming them. 🐶</h2></p>
+<h3 align="center">Adot.ME is a project that links people who want to adopt a puppy with locals in their region who are responsible for welcoming them. 🐶</h3>
 
 # **Web Layout** 💻
 
@@ -36,6 +36,6 @@
 - **Leaflet** (a javacript library) - https://leafletjs.com/ ✔️
 - **PACE** (a javascript loading plugin) - https://github.com/CodeByZach/pace ✔️
 
- ## **<p align="center">Starting the walk to be able to participate in the marathon in this programming world 🏃‍</p>**
+<p align="center">Starting the walk to be able to participate in the marathon in this programming world 🏃‍</p>
 
- ### <p> <h2 align="center">Another application made by Matheus da Cruz 👨‍💻 </h2> </p>
+<h2 align="center">Another application developed by Matheus da Cruz 👨‍💻 </h2>
